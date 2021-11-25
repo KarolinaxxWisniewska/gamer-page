@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/truly-madly-dpad" rel="stylesheet">
+    <title>Gaming tournament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-heading">Acrane</h1>
+            <div class="header-search">
+                <input class="search-input" type="search" placeholder="search...">
+                <ul class="search-list">
+                    <li class="search-item">League of Legends</li>
+                    <li class="search-item">Witcher 3</li>
+                    <li class="search-item">Gta 5</li>
+                    <li class="search-item">Anthem</li>
+                    <li class="search-item">Smite</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <figure class="main-background">
+            <video autoplay muted loop src="./videos/background.mp4" class="main-video">Sorry, your browser do not embbeded video</video>
+        </figure>
+        <section class="register container">
+            <div class="register-box">
+                <h2 class="register-heading">Sign your team!</h2>
+                <form>
+                    <div class="field">
+                        <label for="name">Team name</label>
+                        <input id="name" type="text" placeholder="Type team name" required>
+                    </div>
+                    <div class="field">
+                        <label for="e-mail">E-mail</label>
+                        <input id="e-mail" type="email" placeholder="Type e-mail" required>
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="Type password" required>
+                    </div>
+                    <label for="country">Country</label>
+                    <div class="field">
+                    <select id="country">
+                    <option value="">Please select a country</option>
+                    <option value="pl">Poland</option>
+                    <option value="us">USA</option>
+                    <option value="uk">United Kingdoms</option>
+                    <option value="de">Germany</option>
+                    <option value="ca">Czech Republic</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Game your team is playing:</label>
+                <div>
+                  <input type="radio" name="game" id="lol" value="lol">
+                  <label for="lol">League of Legends</label>
+                </div>
+                <div>
+                  <input type="radio" id="csgo" name="game" value="csgo" checked>
+                  <label for="csgo">CS: GO</label>
+                </div>
+                <div>
+                  <input type="radio" id="dota" name="game" value="dota">
+                  <label for="dota">DOTA</label>
+                </div>
+                <div>
+                  <input type="radio" id="fortnite" name="game" value="fortnite">
+                  <label for="fortnite">Fortnite</label>
+                </div>
+              </div>
+
+                    <button class="btn" type="submit">REGISTER</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
